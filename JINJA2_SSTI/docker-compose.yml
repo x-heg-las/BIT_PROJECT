@@ -1,0 +1,9 @@
+version: '2'
+services:
+  pyserver_jinja:
+    build: .
+    ports:
+     - "5001:80"
+    volumes:
+      - ./flag:/flag
+      - ./src:/app

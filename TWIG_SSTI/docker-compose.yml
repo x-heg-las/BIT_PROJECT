@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    image: php:7.1.4-apache
+    ports:
+     - "5002:80"
+    volumes:
+      - ./flag:/flag
+      - ./src:/var/www/html
