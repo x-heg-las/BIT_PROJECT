@@ -1,0 +1,16 @@
+{% extends "root.html" %}
+
+{% block body %}
+<div class="container">
+ <div class="row h-100 d-flex justify-content-center mt-5">
+    <h3>Repport issue</h3>
+    <form method="post" action="/recap">
+        <textarea name="review" class="form-control mb-3"></textarea>
+        <div class="input-group">
+            <input type="email" class="form-control" name="email" placeholder="Your email"/>
+            <button class="btn btn-primary" type="submit">Send mail</button>
+        </div>
+    </form>
+ </div>
+</div>
+{% endblock %}
