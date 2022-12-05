@@ -77,7 +77,7 @@ loop do
     EOF
 
 
-    form = ERB.new(template, safe_level = 4)
+    form = ERB.new(template)
 
     response_message =  header + form.result(binding) + footer
     content_type = "text/html"
